@@ -32,28 +32,28 @@ A personal portfolio project! With this application, you can showcase your perso
 ## 📸 Screenshots  
 
 ### 🏠 Home Page
-![Home Page](<img width="1903" height="993" alt="Image" src="https://github.com/user-attachments/assets/6f75d360-f13d-43d3-8fde-640c482f1eeb" />)
+<img width="1903" height="993" alt="Image" src="https://github.com/user-attachments/assets/6f75d360-f13d-43d3-8fde-640c482f1eeb" />
 
 ### 📝 Register
-![Register Page](<img width="1913" height="736" alt="Image" src="https://github.com/user-attachments/assets/14b09918-9d13-409e-9cf1-9bb9642a03a6" />)
+<img width="1913" height="736" alt="Image" src="https://github.com/user-attachments/assets/14b09918-9d13-409e-9cf1-9bb9642a03a6" />
 
 ### 🔐 Log In
-![Login Page](<img width="1912" height="597" alt="Image" src="https://github.com/user-attachments/assets/3469eff0-6d96-4b25-9b2b-95ed45495767" />)
+<img width="1912" height="597" alt="Image" src="https://github.com/user-attachments/assets/3469eff0-6d96-4b25-9b2b-95ed45495767" />
 
 ### 📂 Projects
-![Login Page](<img width="1887" height="1417" alt="Image" src="https://github.com/user-attachments/assets/bcaa9a99-c902-4028-ae34-1e8292863066" />)
+<img width="1887" height="1417" alt="Image" src="https://github.com/user-attachments/assets/bcaa9a99-c902-4028-ae34-1e8292863066" />
 
 ### 🗂️ Category Management
-![Login Page](<img width="1901" height="826" alt="Image" src="https://github.com/user-attachments/assets/48aa08f1-cfd3-4edd-a0bc-3efe23fc8be5" />)
+<img width="1901" height="826" alt="Image" src="https://github.com/user-attachments/assets/48aa08f1-cfd3-4edd-a0bc-3efe23fc8be5" />
 
 ### 🛠️ Project Management 
-![Login Page](<img width="1902" height="930" alt="Image" src="https://github.com/user-attachments/assets/02314767-d46d-40a7-98f6-47331660e3a7" />)
+<img width="1902" height="930" alt="Image" src="https://github.com/user-attachments/assets/02314767-d46d-40a7-98f6-47331660e3a7" />
 
 ### ➕ Project Adding 
-![Login Page](<img width="1914" height="758" alt="Image" src="https://github.com/user-attachments/assets/6abd0ea5-b668-4b23-8af3-ae91ae8d6f48" />)
+<img width="1914" height="758" alt="Image" src="https://github.com/user-attachments/assets/6abd0ea5-b668-4b23-8af3-ae91ae8d6f48" />
 
 ### ✉️ Contact
-![Login Page](<img width="1902" height="612" alt="Image" src="https://github.com/user-attachments/assets/a334741a-eda3-43fd-96ed-d3f194865fac" />)
+<img width="1902" height="612" alt="Image" src="https://github.com/user-attachments/assets/a334741a-eda3-43fd-96ed-d3f194865fac" />
 
 ## 🚀 Installation  
 

@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="title">
+      <div class="title-info">
+        <h1 class="title-name">Projects</h1>
+      </div>
+    </section>
+
+    <nav class="navbarBottom">
+      <ul>
+        <li class="active"><a href="/admin/categories">Categories</a></li>
+        <li class="active"><a href="/admin/projectsAdmin">Projects</a></li>
+      </ul>
+    </nav>
+
+    <section id="aboutus" class="md-padding">
+      <div class="container">
+        <div class="row">
+          
+
+          
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>PROJECT NAME</th>
+                  <th>CATEGORY NAME</th>
+                  <th>EDIT</th>
+                  <th>DELETE</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each projects}}
+                <tr>
+                  <td>{{projectName}}</td>
+                  <td>{{category.name}}</td>
+                  <td>
+                    <a class="btn btn-primary" href="admin/projectsAdmin/edit/{{_id}}">EDIT</a>
+                  </td>
+                  <td>
+                    <form action="/admin/projectsAdmin/{{_id}}?_method=DELETE" method="POST">
+                      <input type="hidden" name="_method" value="DELETE">
+                      <button type="submit" class="btn btn-danger deleteButton">DELETE</button>
+                    </form>
+                  </td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

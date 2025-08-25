@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- ICON IMPORT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    {{!-- BOOTSTRAP --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" class="logo">My Portfolio</a>
+
+      <ul>
+  <li class="active"><a href="/"><i class="bi bi-house-fill"></i> Home</a></li>
+  {{#if displayLink}}
+  <li class="active"><a href="/admin"><i class="bi bi-gear-fill"></i> Admin</a></li>
+  {{/if}}
+  <li class="active"><a href="/projects"><i class="bi bi-folder-fill"></i> Projects</a></li>
+
+  {{#if displayLink}}
+  <li class="active"><a href="/projects/new"><i class="bi bi-plus-circle-fill"></i> Add Project</a></li>
+  {{/if}}
+
+  {{#unless displayLink}}
+  <li class="active"><a href="/users/login"><i class="bi bi-box-arrow-in-right"></i> Log In</a></li>
+  <li class="active"><a href="/users/register"><i class="bi bi-person-plus-fill"></i> Register</a></li>
+  {{/unless}}
+
+  <li class="active"><a href="/contact"><i class="bi bi-envelope-fill"></i> Contact</a></li>
+
+  {{#if displayLink}}
+  <li class="active"><a href="/users/logout"><i class="bi bi-box-arrow-right"></i> Log Out</a></li>
+  {{/if}}
+</ul>
+
+
+    </nav>
+
+    {{{body}}}
+
+    <footer>
+      <p class="footer-info">&copy; 2025 Ozan Sönmez. All rights reserved.</p>
+    </footer>

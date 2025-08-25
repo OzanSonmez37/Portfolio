@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Project</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    
+
+    <section class="title">
+        <div class="title-info">
+            <h1 class="title-name login-title-name">Update Project</h1>
+        </div>        
+    </section>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <form action="/admin/projectsAdmin/{{project._id}}?_method=PUT" method="POST" enctype="multipart/form-data">
+        <input type="hidden", name="_method" value="PUT">
+          <div class="row">
+            <div class="offset-2 col-md-8">
+              <div class="form-group w-25 mx-auto">
+                <input class="form-control" id="projectName" name="projectName" type="text" value="{{project.projectName}}" required="required" data-validation-required-message="Please enter project name."/>
+                <p class="help-blog text-danger"></p>
+              </div>
+              <div class="form-group w-25 mx-auto">
+                <textarea class="form-control" id="projectDescription" name="projectDescription" required="required" data-validation-required-message="Please enter project description.">{{project.projectDescription}}</textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+              {{!-- Category --}}
+              <div class="form-group w-25 mx-auto mb-3">
+                <select class="form-control" name="category">
+                  {{#each categories}}
+                    <option value="{{_id}}">{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+              {{!-- Görsel --}}
+              <div class="form-group w-25 mx-auto">
+                <input class="form-control" id="projectImage" name="project_image" type="file" required="required" data-validation-required-message="Please enter project name."/>
+                <p class="help-blog text-danger"></p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 text-center login-button">
+              <div id="success"></div>
+              <button class="btn btn-success rounded-pill px-3" type="submit">Update Project</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

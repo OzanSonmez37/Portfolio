@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+
+    <section class="title">
+      <div class="title-info">
+        <h1 class="title-name">{{project.projectName}}</h1>
+      </div>
+    </section>
+
+    <div class="d-flex justify-content-center gap-4 mt-4 projects-container">
+
+      <div class="card" style="width: 800px;">
+
+        {{! <img src="/images/java.png" class="card-img-top" alt="..." /> }}
+
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="{{project.project_image}}"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/nodejs.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/python.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <!-- Ok butonları -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="card-body">
+          <!-- Author and Date -->
+          <p class="card-text">
+            <i class="bi bi-person-fill"></i>
+            <small class="text-muted">{{project.author.username}} -</small>
+            <i class="bi bi-calendar-event-fill"></i>
+            <small class="text-muted">{{generateDate
+                date
+                "MMM DD YYYY"
+              }}</small>
+          </p>
+
+          <h5 class="card-title">{{project.projectName}}</h5>
+          <p class="card-text">{{project.projectDescription}}</p>
+
+          <a href="#" class="btn btn-primary">Go GitHub</a>
+        </div>
+      </div>
+
+      <div class="categories p-2 category">
+        <h6 class="fw-bold mb-3 categoryTitle">CATEGORIES</h6>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center px-3 py-2">
+            {{#each categories}}
+
+              <li class="list-group-item d-flex justify-content-between align-items-center px-3 py-2">
+                <a
+                  href="#"
+                  class="small text-decoration-none text-dark">
+                  {{name}}
+                </a>
+                <span class="text-warning small">({{num_of_projects}})</span>
+              </li>
+            {{/each}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

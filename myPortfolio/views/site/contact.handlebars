@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    
+
+    <section class="title">
+        <div class="title-info">
+            <h1 class="title-name login-title-name">Contact</h1>
+        </div>        
+    </section>
+
+    <div class="container" style="max-width: 900px;">
+  <div class="row g-3">
+
+    {{#if sessionFlash.message}}
+      <div class="{{sessionFlash.type}} messageBox">
+        {{sessionFlash.message}}
+      </div>
+    {{/if}}
+
+    <!-- Sol taraf -->
+    <div class="col-md-6">
+      <form method="POST" action="/contact/email">
+        <div class="form-group mb-3">
+          <input class="form-control" name="name" type="text" placeholder="Your Name *" required="required" />
+        </div>
+        <div class="form-group mb-3">
+          <input class="form-control" name="email" type="email" placeholder="Your Email *" required="required" />
+        </div>
+        <div class="form-group mb-3">
+          <input class="form-control" name="phone" type="tel" placeholder="Your Phone "/>
+        </div>
+    </div>
+
+    <!-- Sağ taraf -->
+    <div class="col-md-6">
+        <div class="form-group mb-3 h-75">
+          <textarea class="form-control h-100" name="message" placeholder="Your Message *" rows="7" required="required"></textarea>
+        </div>
+    </div>
+
+    <!-- Buton -->
+    <div class="col-12 text-center mt-3">
+      <button class="btn btn-warning px-4 sendButton" type="submit">Send Message</button>
+    </div>
+    </form>
+  </div>
+</div>
+
+
+  </body>
+</html>

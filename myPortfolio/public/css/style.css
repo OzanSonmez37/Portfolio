@@ -1,0 +1,331 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Poopins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0; /* Tüm elemanların kenar boşluklarını sıfırlar */
+    padding: 0; /* Tüm elemanların iç boşluklarını sıfırlar */
+    box-sizing: border-box; /* Elemanların genişlik ve yükseklik hesaplamalarında kenar boşluklarını ve iç boşlukları dahil eder */
+    font-family: 'Poopins', sans-serif;
+}
+
+body {
+    background-color: #1f242d; 
+}
+
+a {
+    text-decoration: none;  /* Linklerin alt çizgilerini kaldırır */
+    color: white;
+}
+
+.navbar {
+    position: fixed; /* Elemanı sayfada sabitler, scroll yapsan bile aynı yerde kalır. */
+    left: 0; /* Elemanın sol kenarını ekranın soluna yaslar. */
+    top: 0;
+    height: 80px;
+    width: 100%;
+    padding: 25px 9%; /* Üst ve alt 25px, Sol ve sağ genişliğin 9%'u kadar boşluk bırakır */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /* Elemanın üst üste gelme sırasını belirler, yüksek değer önde görünmesini sağlar. */
+    background: linear-gradient(135deg, #7493c4, #152d4b);
+}
+
+/* ADMIN PAGE */
+.navbarBottom ul {
+    display: flex;  
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20%;
+}
+
+/* .navbarBottom {
+    margin-bottom: 600px;
+} */
+
+.navbarBottom ul li:hover a {
+    color: #7cf03d; /* Hover sırasında link rengini yeşil yapar */
+    transform: scale(1.9); /* Hover sırasında link boyutunu %10 büyütürür */
+    text-decoration: underline; /* Hover sırasında link altını çizer */
+    text-decoration-color: #7cf03d; /* Alt çizgi rengini yeşil yapar */
+    text-underline-offset: 5px; /* Alt çizginin metinden uzaklığını ayarlar */
+    text-decoration-thickness: 2px; /* Alt çizginin kalınlığını ayarlar */
+}
+/* ADMIN PAGE END */
+
+.navbarBottom a {
+  text-decoration: none;
+  color: white;     /* renk */
+  font-size: 18px;  /* yazı boyutu */
+}
+
+.navbar .logo {
+    margin-top: -13px;
+    font-size: 30px; 
+    font-weight: 700; /* Logo yazısının kalınlığını ayarlar */
+}
+
+.navbar .logo:hover {
+    color: #7cf03d; /* Hover sırasında link rengini yeşil yapar */
+}
+
+.navbar ul {
+    display: flex; /* Liste elemanlarını yatay olarak hizalar */  
+}
+
+.navbar ul li {
+    list-style: none; /* Liste işaretlerini kaldırır */
+    margin-left: 35px; /* Her liste elemanı arasında 35px boşluk bırakır */
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s; /* Hover efektinin süresini ayarlar */
+}
+
+.navbar ul li:hover a {
+    color: #7cf03d; /* Hover sırasında link rengini yeşil yapar */
+    transform: scale(1.9); /* Hover sırasında link boyutunu %10 büyütürür */
+    text-decoration: underline; /* Hover sırasında link altını çizer */
+    text-decoration-color: #7cf03d; /* Alt çizgi rengini yeşil yapar */
+    text-underline-offset: 5px; /* Alt çizginin metinden uzaklığını ayarlar */
+    text-decoration-thickness: 2px; /* Alt çizginin kalınlığını ayarlar */
+}
+
+.home {
+    display: flex; 
+    align-items: center;
+    height: 100vh;
+    padding: 60px 22% 0; /* Üst 60px, alt 0, sol ve sağ genişliğin 22%'u kadar boşluk bırakır */
+    color: #fff;
+}
+
+.home-info h1 {
+    font-size: 55px;
+}
+
+.home-info h2 {
+    font-size: 32px;
+    margin-top: 10px; /* Başlığın üstüne 10px boşluk bırakır */
+    margin-bottom: 10px;
+}
+
+.home-info h2 span {
+    color: #7cf03d; /* Başlık içindeki span etiketinin rengini yeşil yapar */
+    font-weight: 600; /* Başlık içindeki span etiketinin kalınlığını ayarlar */
+}
+
+.home-info p {
+    font-size: 16px;
+    margin: 10px 0 25px; /* Üst 10px, alt 25px boşluk bırakır */
+    width: 70%; /* Paragrafın genişliğini %80 yapar */
+    line-height: 1.7; /* Paragraf satır yüksekliğini 1.7 katı yapar */
+}
+
+.home-info .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block; /* Butonun içeriğini blok olarak gösterir */
+    padding: 10px 30px; /* Butonun içindeki metne 10px üst ve alt, 30px sol ve sağ boşluk bırakır */
+    background-color: #7cf03d; 
+    border: 2px solid #7cf03d; 
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d; /* Butona hafif bir gölge efekti ekler */
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent; /* Hover sırasında arka plan rengini şeffaf yapar */
+    color: #7cf03d; /* Hover sırasında metin rengini yeşil yapar */
+    box-shadow: 0 0 10px #7cf03d; /* Hover sırasında butona hafif bir gölge efekti ekler */
+}
+
+.home-info .btn-sci .sci {
+    margin-left: 20px; /* Sosyal ikonlar ile buton arasında 20px boşluk bırakır */
+}
+
+.home-info .btn-sci .sci a {
+    display: inline-flex; /* Sosyal ikonları yatay olarak hizalar */
+    padding: 8px; /* Sosyal ikonların içindeki metne 8px boşluk bırakır */
+    border: 2px solid #7cf03d; 
+    border-radius: 50%; 
+    font-size: 20px;
+    color: #7cf03d;
+    margin: 0 8px; /* Sosyal ikonlar arasında 8px boşluk bırakır */
+}
+
+.home-info .btn-sci .sci a:hover {
+    background: #7cf03d; 
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d; /* Hover sırasında sosyal ikonlara hafif bir gölge efekti ekler */
+}
+
+.home-img .img-box {
+    width: 22vw; /* Görsel kutusunun genişliğini ekran genişliğinin %32'si olarak ayarlar */
+    height: 22vw; 
+    background: #7cf03d;
+    border-radius: 50%; 
+    padding: 5px; /* Görsel kutusunun içindeki görsele 5px boşluk bırakır */
+}
+
+.home-img .img-box .img-item {
+    position: relative; /* Görsel kutusunun içindeki görselin konumunu ayarlar */
+    width: 100%; /* Görsel kutusunun içindeki görselin genişliğini %100 yapar */
+    height: 100%; 
+    background: rgb(245, 243, 243);
+    border-radius: 50%; 
+    display: flex; /* Görsel kutusunun içindeki görseli esnek kutu olarak gösterir */
+    justify-content: center; /* Görsel kutusunun içindeki görseli yatay olarak ortalar */
+    overflow: hidden; /* Görsel kutusunun içindeki görselin taşmasını engeller */
+}
+
+.home-img .img-box .img-item img {
+    position: absolute; /* Görseli konumlandırır */
+    display: block; /* Görseli blok olarak gösterir */
+    width: 85%; /* Görselin genişliğini kutunun %85'i olarak ayarlar */
+    object-fit: cover; /* Görselin kutuya sığmasını sağlar */
+}
+
+/* ABOUT */
+.about-p {
+    width: 500px;
+    line-height: 1.5; /* Paragraf satır yüksekliğini 1.7 katı yapar */
+    font-size: 22px;
+}
+
+.about-name {
+    color: #7cf03d; /* İsim rengini yeşil yapar */
+}
+
+.about-home-img {
+    padding-left: 226px;
+}
+
+.about-home {
+    display: flex; 
+    align-items: center;
+    height: 50vh;
+    padding: 14% 22% 0; /* Üst 60px, alt 0, sol ve sağ genişliğin 22%'u kadar boşluk bırakır */
+    color: #fff;
+    padding-bottom: 500px; /* Altına 100px boşluk bırakır */
+}
+
+/* TITLE */
+.title-info {
+    display: flex;
+    justify-content: center; /* Başlık içeriğini yatay olarak ortalar */
+    align-items: center; /* Başlık içeriğini dikey olarak ortalar */
+    background-color: #1f242d; /* Başlık bölümünün arka plan rengini ayarlar */
+    padding-top: 200px; /* Başlık bölümünün üstüne 200px boşluk bırakır */
+}
+
+.title-name {
+    color: #7cf03d; /* Başlık adının rengini yeşil yapar */
+    font-weight: 600; /* Başlık adının kalınlığını ayarlar */
+    font-size: 55px;
+}
+
+.login-title-name {
+    padding-bottom: 100px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* LOGIN */
+.login-button {
+    padding-bottom: 420px;
+    padding-top: 50px;
+}
+
+#email, #password, #username {
+    height: 50px; /* Giriş alanlarının genişliğini %100 yapar */
+    padding: 10px; /* Giriş alanlarının içindeki metne 10px boşluk bırakır */
+    border-radius: 5px; /* Giriş alanlarının köşelerini yuvarlar */
+    border: 1px solid #7cf03d; /* Giriş alanlarının kenarlık rengini açık gri yapar */
+}
+
+#projectName, #projectDescription {
+    height: 150px; /* Proje adı ve açıklama alanlarının yüksekliğini 100px yapar */
+    padding: 10px; /* Proje adı ve açıklama alanlarının içindeki metne 10px boşluk bırakır */
+    border-radius: 5px; /* Proje adı ve açıklama alanlarının köşelerini yuvarlar */
+    border: 1px solid #7cf03d; /* Proje adı ve açıklama alanlarının kenarlık rengini açık gri yapar */
+}
+
+#projectName {
+    height: 50px;
+}
+
+/* PROJECTS */
+.projects-container {
+    padding-bottom: 400px;
+    padding-top: 100px;
+    padding-left: 75px;
+}
+
+/* MESSAGE BOX */
+.messageBox {
+  max-width: 500px;        /* kutunun en fazla genişliği */
+  word-wrap: break-word;   /* uzun kelimeleri satırdan taşırmadan kırar */
+  margin-left: 50px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.messageBoxLogin {
+    max-width: 400px; 
+    margin: 0px auto 40px auto;
+    text-align: center;    
+}
+
+.deleteButton {
+    background-color: red;
+}
+
+.category {
+    color: white;
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.categoryTitle {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7cf03d;
+}
+
+.latest {
+    color: white;
+}
+
+.categoryCard {
+    padding-top: 100px;
+    padding-right: 75px;
+}
+
+.goGithub {
+    margin-top: 50px;
+}
+
+.sendButton {
+    margin-bottom: 350px;
+}
+
+.adminLink {
+    margin-bottom: 570px;
+}

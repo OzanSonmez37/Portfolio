@@ -61,7 +61,7 @@ To run this project locally:
 
 ```bash
 # 1️⃣ Clone the repo
-git clone https://github.com/username/my-portfolio.git
+git clone [https://github.com/username/my-portfolio.git](https://github.com/OzanSonmez37/Portfolio)
 
 # 2️⃣ Navigate into the folder
 cd my-portfolio
